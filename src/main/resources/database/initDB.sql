@@ -6,6 +6,7 @@ create table users (
     birthday date not null,
     status varchar(64) not null,
     role_id varchar(64) not null,
+    phone_number int(64) not null,
     login varchar(256) not null unique,
     password varchar(256) not null,
     foreign key (role_id) references roles(role_id)
